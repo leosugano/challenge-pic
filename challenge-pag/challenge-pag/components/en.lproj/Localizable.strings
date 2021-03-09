@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  challenge-pag
+
+  Created by Leonardo Sugano on 08/03/21.
+  
+*/
+"home_title" = "PagSeguro Challenge";
+"error_title" = "Erro";
+"ok" = "ok";
+"error_conversion" = "Erro desconhecido";
+"home_title" = "PunkAPI Beers";
