@@ -10,7 +10,6 @@ import UIKit
 
 class HomePresenter: ViewToPresenterHomeProtocol {
     
-    
     //MARK: - Vars
     var view: PresenterToViewHomeProtocol?
     var interactor: PresenterToInteractorHomeProtocol?
@@ -18,9 +17,7 @@ class HomePresenter: ViewToPresenterHomeProtocol {
     var page: Int = 1
     var beersResponse: [BeerModel]?
 
-    
     func fetchBeers(pagination: Bool, refresh: Bool) {
-        
         if refresh {
             self.resetPage()
         }
@@ -36,18 +33,19 @@ class HomePresenter: ViewToPresenterHomeProtocol {
         interactor?.fetchBeers(page: page, pagination: pagination)
     }
     
+    func showDetailController(navigationController:UINavigationController, indexPath: IndexPath) {
+        if let beer = self.beersResponse?[indexPath.row] {
+            router?.pushToDetailScreen(navigationController: navigationController, beer: beer)
+        }
+    }
+    
+    //MARK: - Aux methods
     func incrementPage() {
         page += 1
     }
     
     func resetPage() {
         page = 1
-    }
-    
-    func showDetailController(navigationController:UINavigationController, indexPath: IndexPath) {
-        if let beer = self.beersResponse?[indexPath.row] {
-            router?.pushToDetailScreen(navigationConroller: navigationController, beer: beer)
-        }
     }
 }
 
@@ -65,6 +63,6 @@ extension HomePresenter: InteractorToPresenterHomeProtocol {
     
     func beersFetchFailed(message: String) {
         self.view?.endLoader()
-        self.view?.showError(message: message)
+        self.router?.showAlert(message: message)
     }
 }

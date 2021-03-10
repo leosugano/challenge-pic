@@ -7,24 +7,28 @@
 
 import Foundation
 import UIKit
+import AFNetworking
 
 class HomeRouter: PresenterToRouterHomeProtocol {
    
     //MARK: - Lets
     private static let homeIdentifier = "home"
     private static let mainIdentifier = "Main"
+    var viewController: HomeViewController?
     
     //MARK: - Methods
-    static func createModule() -> HomeViewController {
+    class func createModule() -> HomeViewController {
         
         guard let view = mainstoryboard.instantiateViewController(withIdentifier: homeIdentifier) as? HomeViewController else {
             return HomeViewController()
         }
         
-        let presenter: ViewToPresenterHomeProtocol & InteractorToPresenterHomeProtocol = HomePresenter()
-        let interactor: PresenterToInteractorHomeProtocol = HomeInteractor()
-        let router: PresenterToRouterHomeProtocol = HomeRouter()
+        let presenter = HomePresenter()
+        let interactor = HomeInteractor()
+        let router = HomeRouter()
+        interactor.manager = AFHTTPSessionManager()
         
+        router.viewController = view
         view.presenter = presenter
         presenter.view = view
         presenter.router = router
@@ -39,10 +43,15 @@ class HomeRouter: PresenterToRouterHomeProtocol {
         return UIStoryboard(name: mainIdentifier,bundle: nil)
     }
     
-    
-    func pushToDetailScreen(navigationConroller:UINavigationController, beer: BeerModel) {
+    func pushToDetailScreen(navigationController:UINavigationController, beer: BeerModel) {
         let beerDetail = DetailRouter.createModule()
         beerDetail.presenter?.beersResponse = beer
-        navigationConroller.pushViewController(beerDetail, animated: true)
-    }    
+        navigationController.pushViewController(beerDetail, animated: true)
+    }
+    
+    func showAlert(message: String) {
+        let alert = UIAlertController(title: "error_title".localized(), message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "ok".localized(), style: .default, handler: nil))
+        self.viewController?.present(alert, animated: true, completion: nil)
+    }
 }

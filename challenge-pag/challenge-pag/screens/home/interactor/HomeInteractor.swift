@@ -9,13 +9,13 @@ import UIKit
 import AFNetworking
 import Mantle
 
-class HomeInteractor: PresenterToInteractorHomeProtocol{
+class HomeInteractor: PresenterToInteractorHomeProtocol {
     
     //MARK: - Lets
     let base_url = "https://api.punkapi.com/v2/beers"
-    let manager = AFHTTPSessionManager()
 
     //MARK: - Vars
+    var manager: AFHTTPSessionManager?
     var presenter: InteractorToPresenterHomeProtocol?
     
     //MARK: - Metods
@@ -24,7 +24,7 @@ class HomeInteractor: PresenterToInteractorHomeProtocol{
             "page" : page
         ]
         
-        manager.get(base_url, parameters: parameters, progress: nil) { [weak self] (operation, responseObject) in
+        manager?.get(base_url, parameters: parameters, progress: nil) { [weak self] (operation, responseObject) in
             if let response = responseObject as? NSArray {
                 let responseArray: NSMutableArray = []
                 

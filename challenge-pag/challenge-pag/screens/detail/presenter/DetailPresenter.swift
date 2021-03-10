@@ -11,7 +11,6 @@ import UIKit
 
 class DetailPresenter: ViewToPresenterDetailProtocol {
     var view: PresenterToViewDetailProtocol?
-    var router: PresenterToRouterDetailProtocol?
     var beersResponse: BeerModel?
     
     func showDetailBeer() {

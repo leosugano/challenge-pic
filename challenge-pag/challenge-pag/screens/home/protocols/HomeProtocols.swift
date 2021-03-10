@@ -21,12 +21,12 @@ protocol PresenterToViewHomeProtocol: class{
     func showBeers()
     func showLoader()
     func endLoader()
-    func showError(message: String)
 }
 
 protocol PresenterToRouterHomeProtocol: class {
     static func createModule() -> HomeViewController
-    func pushToDetailScreen(navigationConroller:UINavigationController, beer: BeerModel)
+    func pushToDetailScreen(navigationController:UINavigationController, beer: BeerModel)
+    func showAlert(message: String)
 }
 
 protocol PresenterToInteractorHomeProtocol: class {

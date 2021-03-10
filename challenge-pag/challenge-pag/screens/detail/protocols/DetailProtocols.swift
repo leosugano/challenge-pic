@@ -9,7 +9,6 @@ import Foundation
 
 protocol ViewToPresenterDetailProtocol: class {
     var view: PresenterToViewDetailProtocol? {get set}
-    var router: PresenterToRouterDetailProtocol? {get set}
     var beersResponse: BeerModel? {get set}
     func showDetailBeer()
 }

@@ -12,7 +12,6 @@
 		E3377E5325F6DF0D00D2B601 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3377E5225F6DF0D00D2B601 /* AppDelegate.swift */; };
 		E3377E5F25F6DF0E00D2B601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3377E5E25F6DF0E00D2B601 /* Assets.xcassets */; };
 		E3377E6225F6DF0E00D2B601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3377E6025F6DF0E00D2B601 /* LaunchScreen.storyboard */; };
-		E3377E6D25F6DF0E00D2B601 /* challenge_pagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3377E6C25F6DF0E00D2B601 /* challenge_pagTests.swift */; };
 		E3377E7825F6DF0E00D2B601 /* challenge_pagUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3377E7725F6DF0E00D2B601 /* challenge_pagUITests.swift */; };
 		E34B544825F6E28A00A52809 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E34B544725F6E28A00A52809 /* Main.storyboard */; };
 		E34B545D25F6E35A00A52809 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E34B545F25F6E35A00A52809 /* Localizable.strings */; };
@@ -30,6 +29,15 @@
 		E34B54F425F82A8600A52809 /* DetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B54F325F82A8600A52809 /* DetailProtocols.swift */; };
 		E34B54F925F82A9500A52809 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B54F825F82A9500A52809 /* DetailPresenter.swift */; };
 		E34B550125F82AA400A52809 /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34B550025F82AA400A52809 /* DetailRouter.swift */; };
+		E3B0322525F9220C004E9742 /* RoundedImageViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B0322425F9220C004E9742 /* RoundedImageViewTest.swift */; };
+		E3B0322A25F9223B004E9742 /* LoaderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B0322925F9223B004E9742 /* LoaderTest.swift */; };
+		E3B0322F25F9224A004E9742 /* StringsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B0322E25F9224A004E9742 /* StringsTest.swift */; };
+		E3B0324F25F951A1004E9742 /* HomePresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B0324E25F951A1004E9742 /* HomePresenterTest.swift */; };
+		E3B0326425F95E37004E9742 /* HomeInteractorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B0326325F95E37004E9742 /* HomeInteractorTest.swift */; };
+		E3B0327025F97732004E9742 /* MockResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B0326F25F97732004E9742 /* MockResponse.swift */; };
+		E3B0327825F97B50004E9742 /* DetaIlPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B0327725F97B50004E9742 /* DetaIlPresenterTest.swift */; };
+		E3B0327D25F97F22004E9742 /* DetailViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B0327C25F97F22004E9742 /* DetailViewControllerTest.swift */; };
+		E3B0328525F9830D004E9742 /* HomeRouterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3B0328425F9830D004E9742 /* HomeRouterTest.swift */; };
 		F31F010FE15B1869BA537A14 /* Pods_challenge_pagTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66BAA249D9551E4EA9F26F53 /* Pods_challenge_pagTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -66,7 +74,6 @@
 		E3377E6125F6DF0E00D2B601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3377E6325F6DF0E00D2B601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3377E6825F6DF0E00D2B601 /* challenge-pagTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "challenge-pagTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E3377E6C25F6DF0E00D2B601 /* challenge_pagTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = challenge_pagTests.swift; sourceTree = "<group>"; };
 		E3377E6E25F6DF0E00D2B601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E3377E7325F6DF0E00D2B601 /* challenge-pagUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "challenge-pagUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3377E7725F6DF0E00D2B601 /* challenge_pagUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = challenge_pagUITests.swift; sourceTree = "<group>"; };
@@ -87,6 +94,15 @@
 		E34B54F325F82A8600A52809 /* DetailProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailProtocols.swift; sourceTree = "<group>"; };
 		E34B54F825F82A9500A52809 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		E34B550025F82AA400A52809 /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
+		E3B0322425F9220C004E9742 /* RoundedImageViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageViewTest.swift; sourceTree = "<group>"; };
+		E3B0322925F9223B004E9742 /* LoaderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderTest.swift; sourceTree = "<group>"; };
+		E3B0322E25F9224A004E9742 /* StringsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsTest.swift; sourceTree = "<group>"; };
+		E3B0324E25F951A1004E9742 /* HomePresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterTest.swift; sourceTree = "<group>"; };
+		E3B0326325F95E37004E9742 /* HomeInteractorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorTest.swift; sourceTree = "<group>"; };
+		E3B0326F25F97732004E9742 /* MockResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockResponse.swift; sourceTree = "<group>"; };
+		E3B0327725F97B50004E9742 /* DetaIlPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetaIlPresenterTest.swift; sourceTree = "<group>"; };
+		E3B0327C25F97F22004E9742 /* DetailViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTest.swift; sourceTree = "<group>"; };
+		E3B0328425F9830D004E9742 /* HomeRouterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,8 +194,10 @@
 		E3377E6B25F6DF0E00D2B601 /* challenge-pagTests */ = {
 			isa = PBXGroup;
 			children = (
-				E3377E6C25F6DF0E00D2B601 /* challenge_pagTests.swift */,
-				E3377E6E25F6DF0E00D2B601 /* Info.plist */,
+				E3B0321725F921C5004E9742 /* app */,
+				E3B0321825F921C9004E9742 /* components */,
+				E3B0321625F921BD004E9742 /* customView */,
+				E3B0321525F921B8004E9742 /* screens */,
 			);
 			path = "challenge-pagTests";
 			sourceTree = "<group>";
@@ -357,6 +375,68 @@
 				E34B54B325F7B59E00A52809 /* RoundedImageView.swift */,
 			);
 			path = customView;
+			sourceTree = "<group>";
+		};
+		E3B0321525F921B8004E9742 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				E3B0324225F92579004E9742 /* detail */,
+				E3B0324325F9257E004E9742 /* home */,
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		E3B0321625F921BD004E9742 /* customView */ = {
+			isa = PBXGroup;
+			children = (
+				E3B0322425F9220C004E9742 /* RoundedImageViewTest.swift */,
+			);
+			path = customView;
+			sourceTree = "<group>";
+		};
+		E3B0321725F921C5004E9742 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				E3377E6E25F6DF0E00D2B601 /* Info.plist */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		E3B0321825F921C9004E9742 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				E3B0322925F9223B004E9742 /* LoaderTest.swift */,
+				E3B0322E25F9224A004E9742 /* StringsTest.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		E3B0324225F92579004E9742 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				E3B0327725F97B50004E9742 /* DetaIlPresenterTest.swift */,
+				E3B0327C25F97F22004E9742 /* DetailViewControllerTest.swift */,
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		E3B0324325F9257E004E9742 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				E3B0326E25F9771E004E9742 /* mockResponse */,
+				E3B0324E25F951A1004E9742 /* HomePresenterTest.swift */,
+				E3B0326325F95E37004E9742 /* HomeInteractorTest.swift */,
+				E3B0328425F9830D004E9742 /* HomeRouterTest.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		E3B0326E25F9771E004E9742 /* mockResponse */ = {
+			isa = PBXGroup;
+			children = (
+				E3B0326F25F97732004E9742 /* MockResponse.swift */,
+			);
+			path = mockResponse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -638,7 +718,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3377E6D25F6DF0E00D2B601 /* challenge_pagTests.swift in Sources */,
+				E3B0327025F97732004E9742 /* MockResponse.swift in Sources */,
+				E3B0322F25F9224A004E9742 /* StringsTest.swift in Sources */,
+				E3B0322A25F9223B004E9742 /* LoaderTest.swift in Sources */,
+				E3B0322525F9220C004E9742 /* RoundedImageViewTest.swift in Sources */,
+				E3B0328525F9830D004E9742 /* HomeRouterTest.swift in Sources */,
+				E3B0327825F97B50004E9742 /* DetaIlPresenterTest.swift in Sources */,
+				E3B0326425F95E37004E9742 /* HomeInteractorTest.swift in Sources */,
+				E3B0324F25F951A1004E9742 /* HomePresenterTest.swift in Sources */,
+				E3B0327D25F97F22004E9742 /* DetailViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -849,7 +937,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F65Q2A73U8;
-				INFOPLIST_FILE = "challenge-pagTests/Info.plist";
+				INFOPLIST_FILE = "challenge-pagTests/app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -872,7 +960,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F65Q2A73U8;
-				INFOPLIST_FILE = "challenge-pagTests/Info.plist";
+				INFOPLIST_FILE = "challenge-pagTests/app/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -27,13 +27,13 @@ class HomeViewController: UIViewController {
        
     }
     
+    //MARK: - Setups
     private func setup() {
         self.setupTableView()
         self.setupNavigationBar()
         presenter?.fetchBeers(pagination: false, refresh: false)
     }
     
-    //MARK: - Setups
     private func setupNavigationBar() {
         self.title = "home_title".localized()
     }
@@ -101,12 +101,4 @@ extension HomeViewController: PresenterToViewHomeProtocol{
         self.refreshControl.endRefreshing()
         self.tableView?.finishInfiniteScroll()
     }
-    
-    func showError(message: String) {
-        let alert = UIAlertController(title: "error_title".localized(), message: message, preferredStyle: UIAlertController.Style.alert)
-        alert.addAction(UIAlertAction(title: "ok".localized(), style: .default, handler: nil))
-        self.present(alert, animated: true, completion: nil)
-    }
 }
-
-
